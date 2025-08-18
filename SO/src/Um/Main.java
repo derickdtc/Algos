@@ -4,7 +4,7 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Main {
-    private static final int TEMPO_SIMULACAO_MS = 90000;
+    private static final int TEMPO_SIMULACAO_MS = 60000;
 
     public static void main(String[] args) {
         int capacidadeFila = 10;

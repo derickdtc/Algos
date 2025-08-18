@@ -27,7 +27,7 @@ class GeradorClientes implements Runnable {
         try {
             while (!Thread.currentThread().isInterrupted()) {
                 // Clientes chegam rápido para testar a fila
-                Thread.sleep((random.nextInt(2) + 1) * 1000);
+                Thread.sleep((random.nextInt(2) + 4) * 1000);
 
                 // Cria um novo cliente em sua própria thread
                 Cliente cliente = new Cliente(proximoClienteId++, capacidadeFila, cadeirasOcupadas, clientes, barbeiros, mutex);
